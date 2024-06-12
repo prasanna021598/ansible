@@ -1,0 +1,6 @@
+- name: Declaring teh variables
+  hosts: web
+  tasks:
+    - name: Writing teh code
+      ansible.builtin.debug:
+      msg: "Hi i am learning ansible."
