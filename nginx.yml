@@ -1,10 +1,11 @@
 - name: Install nginx
   hosts: web
+  become: true
   tasks:
   - name: installing nginx
     ansible.builtin.dnf:
       name: nginx
       state: present
-      become: true
+      
 
 
