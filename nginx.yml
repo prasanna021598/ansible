@@ -3,6 +3,6 @@
   tasks:
   - name: installing nginx
       ansible.builtin.nginx:
-      state: present
+        state: present
 
 
