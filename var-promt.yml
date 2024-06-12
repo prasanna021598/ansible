@@ -1,6 +1,6 @@
 - name: declaring variables in promt
-  hosts: localhost
-  vars_promt:
+  hosts: web
+  vars_prompt:
   - name: Course
     prompt: Please give me the course name
     private: false
