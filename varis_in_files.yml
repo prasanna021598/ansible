@@ -1,4 +1,4 @@
-- name : "declaring variables in other file"
+- name : declaring variables in other file
   hosts: web
   vars_files:
     - var.yml
@@ -6,7 +6,7 @@
     Course: musanj
     Duration: 288hr
   tasks:
-  - name: "declaring a varible"
+  - name: declaring a varible
     # vars:
     #   Course: NJNJNJ
     #   Duration: 12hrs
