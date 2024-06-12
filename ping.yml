@@ -1,4 +1,6 @@
 - name: First ansible
-  ansible.netcommon.net_ping:
-    dest: 172.31.20.29
+  hosts: localhost
+  tasks:
+    ansible.builtin.ping:
+      
 
