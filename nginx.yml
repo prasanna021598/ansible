@@ -2,7 +2,7 @@
   hosts: web
   tasks:
   - name: installing nginx
-      ansible.builtin.nginx:
-        state: present
+      ansible.builtin.dnf:
+      state: present
 
 
