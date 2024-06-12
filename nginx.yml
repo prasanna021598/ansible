@@ -19,6 +19,6 @@
   become: true
   - name: enabling the nginx server
     service:
-    name: nginx
-    state: enabled
+      name: nginx
+      state: enabled
 
