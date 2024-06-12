@@ -1,6 +1,5 @@
-- name: First ansible
+- name: first ansib;e
   hosts: localhost
   tasks:
-    ansible.builtin.ping:
-      
-
+  - name: pinging the server
+    ansible.builtin.ping: 
