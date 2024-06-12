@@ -4,9 +4,9 @@
     - var.yml
   tasks:
   - name: "declaring a varible"
-    vars:
-      Course: NJNJNJ
-      Duration: 12hrs
+    # vars:
+    #   Course: NJNJNJ
+    #   Duration: 12hrs
     ansible.builtin.debug:
       msg: "i am learning {{Course}} in {{Duration}}"
     
