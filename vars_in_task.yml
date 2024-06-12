@@ -1,0 +1,12 @@
+- name: leanring ansible
+  hosts: web
+  vars:
+    Course: DevOps
+    Duration: 2months
+  tasks:
+  - name: learning shell, ansible
+    vars:
+      Course: Shell, Ansible
+      Duration: 1hr
+    ansible.builtin.debug:
+      msg: Hi , i am learning {{Course}} in {{Duration}}
