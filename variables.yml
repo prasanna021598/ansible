@@ -1,8 +1,8 @@
 - name: Declaring teh variables
   hosts: web
   vars:
-    Course: MyCourse
-    Duration: 120hrs
+    Course: Shell
+    Duration: 1hr
   tasks:
     - name: Writing the code
       ansible.builtin.debug:
