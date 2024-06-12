@@ -4,13 +4,14 @@
     - name: Course
       prompt: "Please give me the course name"
       private: false
-    # - name: Duration
-    #   prompt: "Please provide hrs"
-    #   private: true
+      
+    - name: Duration
+      prompt: "Please provide hrs"
+      private: true
 
   tasks:
     - name: "writing the msg to print the valies"
       ansible.builtin.debug:
-        msg: "I am leanring {{Course}}"
+        msg: "I am leanring {{Course}} in {{Duration}}"
 
 
