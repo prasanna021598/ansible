@@ -1,6 +1,6 @@
 - name: Declaring teh variables
   hosts: web
   tasks:
-  - name: Writing the code
-    ansible.builtin.debug:
-      msg: "Hi i am learning ansible."
+    - name: Writing the code
+      ansible.builtin.debug:
+        msg: "Hi i am learning ansible."
