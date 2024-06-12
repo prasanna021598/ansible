@@ -1,0 +1,11 @@
+- name: declaring variables in promt
+  hosts: web
+  vars_promt:
+    Course: "Please give me the course name"
+    Duration: "Please provide hrs"
+  tasks:
+    - name: "writing the msg to print the valies"
+      ansible.builtin.debug:
+        msg: "I am leanring {{Course}} in {{Duration}}"
+
+
