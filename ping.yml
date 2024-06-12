@@ -1,3 +1,4 @@
 - name: First ansible
   ansible.netcommon.net_ping:
-    dest: web
+    dest: 172.31.20.29
+
