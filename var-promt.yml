@@ -1,4 +1,4 @@
-- name: declaring variables in promt
+- name: "declaring variables in promt"
   hosts: web
   vars_promt:
   - name: Course
