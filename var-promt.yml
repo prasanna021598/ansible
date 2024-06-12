@@ -1,4 +1,4 @@
-- name: "declaring variables in promt"
+- name: declaring variables in promt
   hosts: web
   vars_promt:
   - name: Course
@@ -9,7 +9,7 @@
     private: true
     
   tasks:
-    - name: "writing the msg to print the valies"
+    - name: writing the msg to print the valies
       ansible.builtin.debug:
         msg: "I am leanring {{Course}} in {{Duration}}"
 
