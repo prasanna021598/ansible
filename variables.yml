@@ -1,6 +1,12 @@
 - name: Declaring teh variables
   hosts: web
+  vars:
+    Course: MyCourse
+    Duration: 120hrs
   tasks:
     - name: Writing the code
       ansible.builtin.debug:
         msg: "Hi i am learning ansible."
+    - name: writing code by declaring variables.
+      ansible.builtin.debug:
+        msg: "Hi, i am learning {{Course}} in {{Duration}}"
