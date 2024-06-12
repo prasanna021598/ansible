@@ -2,10 +2,10 @@
   hosts: web
   vars_promt:
     - name: Course
-      Course: "Please give me the course name"
+      prompt: "Please give me the course name"
       private: false
     - name: Duration
-      Duration: "Please provide hrs"
+      prompt: "Please provide hrs"
       private: true
 
   tasks:
