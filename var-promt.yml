@@ -1,5 +1,5 @@
 - name: declaring variables in promt
-  hosts: web
+  hosts: localhost
   vars_promt:
   - name: Course
     prompt: Please give me the course name
