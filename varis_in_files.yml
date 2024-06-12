@@ -2,11 +2,14 @@
   hosts: web
   vars_files:
     - var.yml
+  vars:
+    Course: musanj
+    Duration: 288hr
   tasks:
   - name: "declaring a varible"
-    # vars:
-    #   Course: NJNJNJ
-    #   Duration: 12hrs
+    vars:
+      Course: NJNJNJ
+      Duration: 12hrs
     ansible.builtin.debug:
       msg: "i am learning {{Course}} in {{Duration}}"
     
