@@ -10,3 +10,6 @@
       Duration: 1hr
     ansible.builtin.debug:
       msg: Hi , i am learning {{Course}} in {{Duration}}
+  - name: learning devops
+    ansible.builtin.debug:
+      msg: Hi , i am learning {{Course}} in {{Duration}}
