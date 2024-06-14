@@ -7,11 +7,13 @@
       name: nginx
     register: nginx_status
 
-  # - name: Writing conditions for practice
-  #   ansible.builtin.command: useradd expense
-  #   ansible.builtin.user:
-  #     name: prasanna
-  #   when: 
   - name: Checking the output of nginx
     ansible.builtin.debug:
      msg: " {{nginx_status}}"
+
+  - name: Writing conditions for practice
+    #ansible.builtin.command: useradd expense
+    ansible.builtin.user:
+      name: prasanna
+    when: nginx_status.UnitFileState == enabled
+  
