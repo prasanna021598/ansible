@@ -5,7 +5,7 @@
   - name: Checking nginx status
     systemd:
       name: nginx
-      register: nginx_status
+    register: nginx_status
 
   # - name: Writing conditions for practice
   #   ansible.builtin.command: useradd expense
