@@ -15,5 +15,5 @@
     #ansible.builtin.command: useradd expense
     ansible.builtin.user:
       name: prasanna
-    when: nginx_status.UnitFileState == enabled
+    when: nginx_status.UnitFileState == 'enabled'
   
