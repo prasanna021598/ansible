@@ -14,6 +14,6 @@
   - name: adding user with condition
     #ansible.builtin.command: useradd expense
     ansible.builtin.user:
-      name: ammaaaa
+      name: msuansible
     when: nginx_status.status.UnitFileState == 'enabled'
   
