@@ -1,0 +1,11 @@
+- name: First practice of conditions concept
+  hosts: web
+  become: true
+  tasks:
+  - name: Writing conditions for practice
+    ansible.builtin.command: useradd expense
+    when: 
+      service:
+        name: nginx
+        enabled: yes
+        
